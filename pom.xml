@@ -60,12 +60,12 @@
         <repository>
             <id>central</id>
             <name>artifactory.pd.impulse.com-releases</name>
-            <url>http://artifactory.pd.impulse.com:8081/artifactory/releases</url>
+            <url>http://artifactory.pd.impulse.com:8081/artifactory/plugins-release-local</url>
         </repository>
         <snapshotRepository>
             <id>snapshots</id>
             <name>artifactory.pd.impulse.com-snapshots</name>
-            <url>http://artifactory.pd.impulse.com:8081/artifactory/snapshots</url>
+            <url>http://artifactory.pd.impulse.com:8081/artifactory/plugins-snapshot-local</url>
         </snapshotRepository>
     </distributionManagement>
 
