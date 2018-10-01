@@ -43,9 +43,9 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/egineering-llc/gitflow-helper-maven-plugin</url>
-        <connection>scm:git:git://github.com/egineering-llc/gitflow-helper-maven-plugin.git</connection>
-        <developerConnection>scm:git:git@github.com:egineering-llc/gitflow-helper-maven-plugin.git</developerConnection>
+        <url>https://github.com/impulse-point/gitflow-helper-maven-plugin</url>
+        <connection>scm:git:git://github.com/impulse-point/gitflow-helper-maven-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:impulse-point/gitflow-helper-maven-plugin.git</developerConnection>
     </scm>
 
     <properties>
@@ -57,14 +57,16 @@
     </properties>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
         <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>central</id>
+            <name>artifactory.pd.impulse.com-releases</name>
+            <url>http://artifactory.pd.impulse.com:8081/artifactory/releases</url>
         </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>artifactory.pd.impulse.com-snapshots</name>
+            <url>http://artifactory.pd.impulse.com:8081/artifactory/snapshots</url>
+        </snapshotRepository>
     </distributionManagement>
 
     <dependencies>
